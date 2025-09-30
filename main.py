@@ -25,7 +25,7 @@ def getConnection():
 @app.get('/')
 def getWelcome(): # function handler
     return {
-        "msg": "sample-fastapi-pg"
+        "msg": "ranggaimut"
     }
 #-------------------------------------------------------------------------------------------------------------
 @app.get('/profile')
