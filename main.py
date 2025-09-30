@@ -55,7 +55,7 @@ def getProfileById(id: int, name: str, api_key: str = Header(None)):
     df =df.query(f"id == {id} and name == '{name}'")
 
     if len(df) == 0:
-        raise HTTPExeption(status_code=404, detail="data not found")
+        raise HTTPException(status_code=404, detail="data not found")
 
     return {
         "data": df.to_dict(orient="records"), # dataframe dalam bentuk dictionary -> .to_dict()
