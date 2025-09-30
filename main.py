@@ -1,5 +1,5 @@
 # import package
-from fastapi import FastAPI, HTTPExeption, Header
+from fastapi import FastAPI, HTTPException, Header
 import psycopg2
 import pandas as pd
 
